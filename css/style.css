@@ -1,0 +1,151 @@
+body{
+    background-color: #f4f4f4;
+    font-family: Arial,sans-serif;
+    margin:0;
+    padding: 0;
+    color: #333;
+    /*color: white;*/
+}
+nav{
+    background-color: #4E342E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+nav ul{
+   display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li{
+    margin: 0 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color:white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+
+}
+nav ul li a:hover{
+    background-color: #f4f4f4;
+    color: #4E342E;
+}
+.hero-image{
+    background-image: url("https://cdn.pixabay.com/photo/2021/11/20/03/35/doctor-6810776_1280.png");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    border-radius: 15px;
+    margin: 20px;
+}
+.hero-text{
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    color: brown;
+    font-size: 36px;
+    font-weight: bold;
+
+}
+p{
+    color: #333;
+    font-size: 21px;
+    font-weight: bold;
+    margin: 20px;
+    line-height: 1.6;
+
+}
+footer{
+    text-align: center;
+    padding: 10px;
+    background-color: #4E342E;
+    color: white;
+    border-radius: 15px 15px 0 0;
+    margin-top: 40px;
+}
+@media (max-width:768px){
+  nav ul{
+      flex-direction: column;
+  }
+    nav ul li{
+        margin: 10px 0;
+    }
+    .hero-text{
+        font-size: 24px;
+    }
+    p{
+        font-size: 15px;
+    }
+}
+/*Contact page styling*/
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+.card{
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    width: 35%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+}
+.card-title{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.card-text{
+    margin-bottom: 12px;
+}
+.btn{
+    padding: 10px 20px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.btn i{
+    margin-right: 5px;
+}
+.form{
+    width:45%;
+
+
+}
+.form-group{
+    margin-bottom: 14px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group input, .form-group textarea{
+    width: 70%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+.form input[type="submit"]{
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 30%;
+
+
+}
